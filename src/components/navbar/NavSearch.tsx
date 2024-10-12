@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react'
 function NavSearch() {
   const searchParams = useSearchParams()
   const { replace } = useRouter()
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [search, setSearch] = useState(
     searchParams.get('search')?.toString() || ''
   )
