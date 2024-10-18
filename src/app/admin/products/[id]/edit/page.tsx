@@ -1,4 +1,4 @@
-function page() {
-  return <div>page</div>
+function EditProductPage() {
+  return <div>EditProductPage </div>
 }
-export default page
+export default EditProductPage
