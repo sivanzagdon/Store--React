@@ -23,3 +23,4 @@ model Product {
   updatedAt    DateTime   @updatedAt
   clerkId  String
 }
+
