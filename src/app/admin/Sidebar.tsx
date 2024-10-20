@@ -1,9 +1,8 @@
 'use client'
-
-import { Button } from '@/components/ui/button'
 import { adminLinks } from '@/utils/links'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Button } from '@/components/ui/button'
 
 function Sidebar() {
   const pathname = usePathname()
@@ -15,13 +14,12 @@ function Sidebar() {
         const variant = isActivePage ? 'default' : 'ghost'
         return (
           <Button
+            key={link.href}
             asChild
             className="w-full mb-2 capitalize font-normal justify-start"
             variant={variant}
           >
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
+            <Link href={link.href}>{link.label}</Link>
           </Button>
         )
       })}
